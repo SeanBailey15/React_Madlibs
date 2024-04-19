@@ -47,4 +47,4 @@ function addCommas(num) {
   }
 }
 
-module.exports = addCommas;
+export default addCommas;
