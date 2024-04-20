@@ -1,54 +1,56 @@
 import { useFormik } from "formik";
+import './WordForm.css'
 
 const validate = values => {
     const errors = {};
     if(!values.noun1){
         errors.noun1 = 'Required';
-    } else if (values.noun1 instanceof Number) {
-        errors.noun1 = 'Cannot be a number';
+    } else if (Number(values.noun1)) {
+        errors.noun1 = 'Cannot Be A Number'
     }
 
     if(!values.name){
         errors.name = 'Required';
-    } else if (values.name instanceof Number) {
-        errors.name = 'Cannot be a number';
+    } else if (Number(values.name)) {
+        errors.name = 'Cannot Be A Number'
     }
 
     if(!values.adjective1){
         errors.adjective1 = 'Required';
-    } else if (values.adjective1 instanceof Number) {
-        errors.adjective1 = 'Cannot be a number';
+    } else if (Number(values.adjective1)) {
+        errors.adjective1 = 'Cannot Be A Number'
     }
 
     if(!values.noun2){
         errors.noun2 = 'Required';
-    } else if (values.noun2 instanceof Number) {
-        errors.noun2 = 'Cannot be a number';
+    } else if (Number(values.noun2)) {
+        errors.noun2 = 'Cannot Be A Number'
     }
 
     if(!values.noun3){
         errors.noun3 = 'Required';
-    } else if (values.noun3 instanceof Number) {
-        errors.noun3 = 'Cannot be a number';
+    } else if (Number(values.noun3)) {
+        errors.noun3 = 'Cannot Be A Number'
     }
 
     if(!values.adjective2){
         errors.adjective2 = 'Required';
-    } else if (values.adjective2 instanceof Number) {
-        errors.adjective2 = 'Cannot be a number';
+    } else if (Number(values.adjective2)) {
+        errors.adjective2 = 'Cannot Be A Number'
     }
 
     if(!values.adjective3){
         errors.adjective3 = 'Required';
-    } else if (values.adjective3 instanceof Number) {
-        errors.adjective3 = 'Cannot be a number';
+    } else if (Number(values.adjective3)) {
+        errors.adjective3 = 'Cannot Be A Number'
     }
 
     if(!values.emotion){
         errors.emotion = 'Required';
-    } else if (values.emotion instanceof Number) {
-        errors.emotion = 'Cannot be a number';
+    } else if (Number(values.emotion)) {
+        errors.emotion = 'Cannot Be A Number'
     }
+
     return errors;
 }
 

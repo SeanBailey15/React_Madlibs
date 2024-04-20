@@ -1,4 +1,4 @@
-const addCommas = require("./addCommas");
+import addCommas from "./addCommas";
 
 describe("#addCommas", () => {
   test("it is a function", () => {

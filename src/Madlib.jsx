@@ -2,6 +2,7 @@ import { useState } from "react"
 import { v4 as uuid } from "uuid"
 import WordForm from "./WordForm"
 import Story from "./Story"
+import './Madlib.css'
 
 const Madlib = () => {
     const INITIAL_STATE = []
@@ -14,7 +15,7 @@ const Madlib = () => {
 
     return (
         <div className="Madlib">
-            <h1 className="Madlib-Title">🤪Madlibs!🤪</h1>
+            <h1 className="Madlib-title">🤪Madlibs!🤪</h1>
             {story.length === 0 && (
                 <div className="Madlib-form">
                     <WordForm createStory={createStory} />

@@ -1,0 +1,16 @@
+.Story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Story-text {
+  width: 35em;
+  font-size: x-large;
+  margin-bottom: 0;
+}
+
+.Story-words {
+  color: blueviolet;
+  font-weight: bold;
+}

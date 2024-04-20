@@ -1,0 +1,21 @@
+.Madlib {
+  display: flex;
+  flex-direction: column;
+}
+
+.Madlib-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 4em;
+}
+
+.Madlib-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.Madlib-story {
+  text-align: center;
+}
